@@ -1,0 +1,7 @@
+.sectionTwo{
+     @include flex(center);
+     flex-direction:column;
+     img{
+         width:$imgWidth;
+     }
+}
