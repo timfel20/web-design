@@ -1,5 +1,15 @@
-.section5{
-    img{
-        width: $imgWidth;
-    }
+.sectionFive{
+  @extend .sectionFour;
+  margin-top: 40%;
+  float: right;
+
+  h1{
+   
+  }
+  img{
+    @extend img;
+  }
+  .buttons-and-buy{
+    display: flex;
+}
 }

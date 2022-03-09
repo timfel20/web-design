@@ -8,6 +8,8 @@ header{
     @include flex(space-between);
      width:100%;
      padding: 50px;
+     position: sticky;
+     top:0; 
     img{
         width:120px;
     }
@@ -23,3 +25,5 @@ header{
         
     }
 }
+.nav-colored {background-color:"red"}
+.nav-transparent {background-color:"white"}

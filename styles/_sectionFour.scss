@@ -1,3 +1,21 @@
 .sectionFour{
-    display: flex;
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10%;
+    h2{
+
+    }
+    img{
+       z-index: -1;
+       position: absolute;
+       width:400px;
+       left: 120px;
+    }
+    p{
+
+    }
+    .buttons-and-buy{
+        display: flex;
+    }
 }
