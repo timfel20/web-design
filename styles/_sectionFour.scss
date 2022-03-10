@@ -2,23 +2,48 @@
   display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 1400px;
+    margin-top: 1250px;
     margin: 40px;
     h2{
 
     }
-    img{
+    .product-images{
        z-index: -1;
        position: absolute;
        width:350px;
        left: 120px;
+       margin-top:-65px;
+    }
+    hr{
+        border:solid rgb(179, 175, 175); 
+        border-width: 1px 0 0; 
+        margin: 22px 0 21px; 
+        height: 0;
+        width: 580px;
+
+      }
+    .shirt{
+        transform: scaleX(-1);
     }
     button{
         width: 70px;
         height: 30px;
         border-radius: 10px;
     }
+    .product-colors-button{
+        display:inline-block;
+    }
+
     .buttons-and-buy{
-        display: flex;
+        @include flex(space-between);
+        align-items: center;
+        margin-top: 30px;
+        width: 500px;
+    }
+    .buy{
+        display:inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 }

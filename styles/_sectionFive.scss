@@ -6,8 +6,12 @@
   h1{
    
   }
-  img{
-    @extend img;
+  .product-images{
+    @extend .product-images;
+  }
+  .bottle{
+    width: 230px;
+    margin-top: -98px;
   }
   .buttons-and-buy{
     display: flex;

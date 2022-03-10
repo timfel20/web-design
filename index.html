@@ -12,22 +12,22 @@
     <title>Document</title>
 </head>
 <body>
-    <header class ="navbar">
+    <nav class ="navbar">
         <img src="./images/logo.png"></img>
         <div class="menus">
          <P>Products</P>   
          <P>Contact us</P> 
          <P>Cart</P> 
         </div>
-    </header>
+    </nav>
     <section class="sectionTwo">
         <h1 class="sectionTwo-first-header">LOREM</h1>
-        <hr>
+        <hr class="tophr">
         <div class ="productImage">
             <img class ="mug1" src="./images/Mug1.png" alt="mug1"></img>
         </div>
         <h1 class="sectionTwo-second-header">IPSUM</h1>
-        <hr>
+        <hr class="bottomhr">
         <div class="contact-us">
         <h1 class="sectionTwo-third-header">DOLOR</h1>
         <p>__contact us</p>
@@ -41,53 +41,63 @@
     </section>
     <section class="sectionFour">
             <h2>lorem</h2>
-            <img src="./images/Tshirt1.png"/>
-            <img src="./images/Tshirt2.png"/>
+            <img class="product-images shirt" src="./images/Tshirt1.png"/>
+            <img class="product-images shirt"src="./images/Tshirt2.png"/>
             <p>Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor mollis purus.</p>
             <div class ="buttons-and-buy">
-                <button class="grey-button"></button>
-                <button class="pink-button"></button>
-                <div>
+                <div class="product-colors-button">
+                    <button class="grey-button"></button>
+                    <button class="pink-button"></button>
+                </div>
+                <div class="buy">
                     <p>Buy</p>
-                    <img src="">
+                    <img src="" alt="buy">
                 </div>
             </div>
+            <hr>
     </section>
     <section class="sectionFive">
         <h2>lorem</h2>
-        <img src="./images/Mug1.png"/>
-        <img src="./images/Mug2.png"/>
+        <img class="product-images bottle" src="./images/bottle1.png"/>
+        <img class="product-images bottle" src="./images/bottle2.png"/>
         <p>Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor mollis purus.</p>
         <div class ="buttons-and-buy">
-            <button class="grey-button"></button>
-            <button class="pink-button"></button>
+            <div class="product-colors-button">
+                <button class="grey-button"></button>
+                <button class="pink-button"></button>
+            </div>
             <div>
-                <p>Buy</p>
-                <img src="">
+                <div class="buy">
+                    <p>Buy</p>
+                    <img src="" alt="buy">
+                </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="footer-email">
-            <p>hello@workoholics.es</p>
-            <p>We love what we do</p>
-        </div>
-        <div class="footer-phone-number">
-            <p>+34 944 059 957</p>
-            <p>We are Worköholics.</p>
-        </div>
-        <form action="">
-        <input value="Email">Email</input>
-        </form>
         <hr>
-        <div>
-            <i class="fa-thin fa-square"></i>
-            <i class="fa-solid fa-check"></i>
-            <p>I have read and accepted the Terms and Conditions.</p>
-            <div class="footer-submit">
-            <p>Submit</p>
-            <img>
+    </section>
+    <footer class="footer">
+        <div class="footer-details phone">
+            <p>hello@workoholics.es</p>
+            <p>+34 944 059 957</p>
         </div>
+        <div class="footer-details ">
+            <p>We are Worköholics.</p>
+            <p>We love what we do</p>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                <label for="name" class="form__label">Name</label>
+            </div>
+            <div class="check-terms">
+                <div class="terms-conditions">
+                    <i class="fa-thin fa-square"></i>
+                    <i class="fa-solid fa-check"></i>
+                    <p>I have read and accepted the Terms and Conditions.</p>
+                </div>
+                <div class="footer-submit">
+                    <p>Submit</p>
+                    <button>submit</button>
+                </div>
+            </div>
         </div>
     </footer>
  <script src ="script.js"></script>   
