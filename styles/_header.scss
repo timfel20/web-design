@@ -6,8 +6,8 @@
 
 header{
     @include flex(space-between);
-     width:100%;
-     padding: 50px;
+    width: 96%;
+     margin: 30px;
      position: sticky;
      top:0; 
     img{
@@ -15,8 +15,8 @@ header{
     }
     .menus{
         display: flex;
-        flex-wrap: wrap;
-        column-gap:40px;
+
+        column-gap:30px;
         p{
             &:hover{
                 background-color: rgb(55, 157, 197);

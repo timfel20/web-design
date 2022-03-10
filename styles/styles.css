@@ -8,8 +8,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  padding: 50px;
+  width: 96%;
+  margin: 30px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -23,10 +23,8 @@ header .menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
 }
 
 header .menus p:hover {
@@ -61,16 +59,16 @@ header .menus p:hover {
 .sectionTwo .sectionTwo-first-header {
   margin-bottom: 2px;
   z-index: -99;
-  font-family: 'DM Sans Regular';
 }
 
 .sectionTwo .sectionTwo-second-header {
   margin-top: 2px;
+  margin-left: 250px;
 }
 
 .sectionTwo .sectionTwo-third-header {
-  margin-top: 2px;
-  margin-left: 30%;
+  margin-top: 20px;
+  margin-left: 450px;
 }
 
 .sectionTwo .contact-us {
@@ -84,20 +82,39 @@ header .menus p:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 1280px;
 }
 
 .sectionTwo img {
   width: 450px;
   position: absolute;
   z-index: -1;
-  margin-top: -78px;
+  margin-left: 60px;
+  margin-top: -125px;
 }
 
 .sectionTwo h1 {
   font-size: 100px;
   font-weight: 900;
-  /* color:$grey; */
+  color: #212222;
+}
+
+.sectionThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+.sectionThree button {
+  width: 60px;
 }
 
 .sectionFour, .sectionFive {
@@ -109,7 +126,8 @@ header .menus p:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 10%;
+  margin-top: 1200px;
+  margin: 40px;
 }
 
 .sectionFour img, .sectionFive img {
@@ -119,6 +137,12 @@ header .menus p:hover {
   left: 120px;
 }
 
+.sectionFour button, .sectionFive button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+}
+
 .sectionFour .buttons-and-buy, .sectionFive .buttons-and-buy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +150,7 @@ header .menus p:hover {
 }
 
 .sectionFive {
-  margin-top: 40%;
+  margin-top: 300px;
   float: right;
 }
 
@@ -137,12 +161,16 @@ header .menus p:hover {
 }
 
 footer {
-  margin-top: 85%;
+  color: #c0c9c8;
+  margin-top: 800px;
+  background-color: #212222;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Sans Regular';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'DM Sans Bold';
 }
 /*# sourceMappingURL=styles.css.map */

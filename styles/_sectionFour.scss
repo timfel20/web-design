@@ -2,7 +2,8 @@
   display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 10%;
+    margin-top: 1200px;
+    margin: 40px;
     h2{
 
     }
@@ -12,8 +13,10 @@
        width:400px;
        left: 120px;
     }
-    p{
-
+    button{
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
     }
     .buttons-and-buy{
         display: flex;

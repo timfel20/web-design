@@ -6,32 +6,33 @@
      #{&}-first-header{
         margin-bottom: 2px;
         z-index: -99;
-        font-family:  'DM Sans Regular';
       }
       
      #{&}-second-header{
         margin-top: 2px;
+        margin-left: 250px
       }
       #{&}-third-header{
-        margin-top: 2px;
-        margin-left: 30%;
+        margin-top: 20px;
+        margin-left: 450px;
       }
       
      .contact-us{
         margin-top: -110px;
         @include flex(space-between);
-        width: 100%;
+        width: 1280px
       }
      img{
          width:450px;
          position: absolute;
          z-index: -1;
-         margin-top: -78px;
+         margin-left: 60px;
+         margin-top: -125px;
      }
      h1{
          font-size: 100px;
          font-weight: 900;
-         /* color:$grey; */
+         color:$grey; 
      }
      
 }

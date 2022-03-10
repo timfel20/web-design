@@ -1,12 +1,14 @@
+@import './variables';
 @import './header';
 @import './sectionTwo';
 @import './sectionThree';
 @import './sectionFour';
 @import './sectionFive';
 @import './footer';
-@import './variables';
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Sans Regular';
+    box-sizing: border-box;
+    font-family: 'DM Sans Bold';
 }
