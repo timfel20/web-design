@@ -1,7 +1,7 @@
 navbar = document.querySelector('.navbar')
 
 window.addEventListener('scroll', function(e){
-    if (window.scrollY > 0 ) {
+    if (window.scrollY >= 200 ) {
         navbar.classList.add("nav-colored");
         navbar.classList.remove("nav-transparent");
      } 

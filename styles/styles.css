@@ -8,11 +8,14 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 96%;
-  margin: 30px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  padding: 0 30px 0 40px;
+  -webkit-transition-property: sliding-vertically;
+  transition-property: sliding-vertically;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 header img, header .sectionFive img, .sectionFive header img {
@@ -32,7 +35,7 @@ header .menus p:hover {
 }
 
 .nav-colored {
-  background-color: "red";
+  background-color: #e4e4e4;
 }
 
 .nav-transparent {
@@ -113,10 +116,6 @@ header .menus p:hover {
   margin-bottom: 140px;
 }
 
-.sectionThree button {
-  width: 60px;
-}
-
 .sectionFour, .sectionFive {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,14 +125,14 @@ header .menus p:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 1200px;
+  margin-top: 1400px;
   margin: 40px;
 }
 
 .sectionFour img, .sectionFive img {
   z-index: -1;
   position: absolute;
-  width: 400px;
+  width: 350px;
   left: 120px;
 }
 

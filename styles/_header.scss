@@ -6,10 +6,11 @@
 
 header{
     @include flex(space-between);
-    width: 96%;
-     margin: 30px;
      position: sticky;
      top:0; 
+     padding: (0 30px 0 40px);
+     transition-property: sliding-vertically;
+     transition-duration: 2s;
     img{
         width:120px;
     }
@@ -25,5 +26,9 @@ header{
         
     }
 }
-.nav-colored {background-color:"red"}
-.nav-transparent {background-color:"white"}
+.nav-colored {
+    background-color: rgb(228, 228, 228);
+}
+.nav-transparent {
+    background-color:"white"
+}
