@@ -138,6 +138,15 @@ nav .menus p:hover {
           justify-content: center;
   margin-top: 100px;
   margin-bottom: 200px;
+  text-indent: 20px;
+  text-align: left;
+}
+
+.sectionThree:before {
+  content: '.';
+  color: #FB088C;
+  font-size: 100px;
+  margin-bottom: 95px;
 }
 
 .sectionFour, .sectionFive {
@@ -178,6 +187,14 @@ nav .menus p:hover {
   width: 70px;
   height: 30px;
   border-radius: 10px;
+}
+
+.sectionFour .pink-button, .sectionFive .pink-button {
+  background-color: #FB088C;
+}
+
+.sectionFour .grey-button, .sectionFive .grey-button {
+  background-color: #212222;
 }
 
 .sectionFour .product-colors-button, .sectionFive .product-colors-button {
@@ -277,6 +294,7 @@ nav .menus p:hover {
   font-family: inherit;
   width: 100%;
   border: 0;
+  margin-top: 20px;
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1.3rem;
@@ -306,17 +324,16 @@ nav .menus p:hover {
 .footer .form__field:placeholder-shown ~ .form__label {
   font-size: 1.3rem;
   cursor: text;
-  top: 20px;
 }
 
 .footer .form__label {
   position: absolute;
-  top: 0;
   display: block;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
   color: #9b9b9b;
+  margin-top: -60px;
 }
 
 .footer .form__field:focus {
@@ -343,6 +360,18 @@ nav .menus p:hover {
 .footer .form__field:required, .footer .form__field:invalid {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.footer .tick-box {
+  display: -ms-grid;
+  display: grid;
+}
+
+.footer .icon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .footer .check-terms {
