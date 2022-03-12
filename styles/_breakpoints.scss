@@ -1,7 +1,7 @@
 $breakpoints: (
     "xs": 549px,
     "md":550px,
-    "lg":970px
+    "lg":667px
 );
 @mixin xs{
 @media (max-width:map-get($breakpoints, "xs")){
@@ -14,4 +14,3 @@ $breakpoints: (
         @content;
  }
 }
-

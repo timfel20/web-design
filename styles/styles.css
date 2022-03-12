@@ -508,7 +508,7 @@ nav .burger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 250px;
+  gap: 150px;
 }
 
 .footer .terms-conditions {
