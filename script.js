@@ -14,7 +14,7 @@ window.addEventListener('scroll', function(e){
 })
    
 
-navbar.addEventListener('click', showMenu=(e)=>{
+navbar.addEventListener('click', function showMenu(e){
    if(e.currentTarget.id == navbar){
    menu.classList.add('active')
    navbar.classList.add('none')
@@ -23,3 +23,4 @@ navbar.addEventListener('click', showMenu=(e)=>{
    navbar.classList.remove('none')
 }
 })
+console.log(e.currentTarget.id)

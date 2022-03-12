@@ -201,7 +201,7 @@ nav .burger {
     margin-top: -90px;
   }
   .sectionTwo .sectionTwo-second-header {
-    margin-top: 2px;
+    margin-top: -12px;
     margin-left: 100px;
   }
   .sectionTwo .sectionTwo-third-header {
@@ -442,7 +442,7 @@ nav .burger {
 .footer {
   margin-top: 250px;
   background-color: #212222;
-  min-height: 49vh;
+  min-height: 15vh;
 }
 
 .footer .footer-container {
@@ -452,14 +452,11 @@ nav .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
   color: #c0c9c8;
   background-color: #212222;
-  min-height: 49vh;
-  min-width: 100%;
-  padding: 20px;
 }
 
 .footer p {
@@ -524,7 +521,8 @@ nav .burger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .footer .footer-submit {
@@ -540,7 +538,8 @@ nav .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   margin-right: 50px;
 }
 
@@ -559,6 +558,7 @@ nav .burger {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 5px;
+    padding-left: 20px;
   }
   .footer-container .phone {
     -webkit-box-align: start;
@@ -581,6 +581,17 @@ nav .burger {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .phone {
+    margin-right: 90px;
+    padding-bottom: 160px;
+    padding-left: 25px;
+  }
+  .footer-submit {
+    padding-top: 90px;
   }
 }
 
