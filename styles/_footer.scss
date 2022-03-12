@@ -1,11 +1,16 @@
 .footer{
-   @include flex(space-between);
-   gap: 10px;
-    color: rgb(192, 201, 200);
      margin-top: 250px;
      background-color: #212222; 
-     min-height: 49vh;
-     padding: 5px 30px 5px 30px;
+     min-height: 49vh; 
+
+     #{&}-container{
+      @include flex(space-between);
+        color: rgb(192, 201, 200);
+         background-color: #212222; 
+         min-height: 49vh;
+         min-width: 100%;
+         padding: 20px;
+     }
 
      p{
        font-size: 1em;
@@ -13,7 +18,7 @@
 
   
      #{&}-details{
-          @include flex(space-between);
+         display: flex;
           flex-direction: column;
           align-items: flex-start;
 
@@ -33,7 +38,7 @@
     }
      .check-terms{
         @include flex(center);
-        gap: 100px;
+        gap: 250px;
      }
      .terms-conditions{
        @include flex(center);
@@ -43,20 +48,37 @@
      #{&}-submit{
      display: flex;
      }
+     .footer-submit{
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       margin-right: 50px;
+     }
+     img{
+       width: 40px;
+       height: 20px;
+     }
 }
 
  @include xs{
-  .footer{
-    align-items: center;
-   display: inline-block;
+  .footer-container{
+   align-items: flex-start !important;
+   flex-direction: column;
+   padding: 5px;
+
     .phone{
       align-items: flex-start;
     }
-    .terms-conditions{
-     
+    .check-terms{
+     gap:40px;
+    }
+    .footer-details{
+
+     align-items: flex-start;
     }
     .check-terms{
-    display: inline-block;
+    flex-direction: column;
+    align-items: center;
     
   }
   }

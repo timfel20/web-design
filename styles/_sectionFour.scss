@@ -57,7 +57,7 @@
 }
  @include xs{
     .sectionFour{
-        max-width: 400px;
+        margin-left: 15px;
         .buttons-and-buy{
             flex-direction: column;
             gap: 10px;
@@ -65,7 +65,7 @@
         }
         .product-images{
             width: 220px;
-            margin-top:33px;
+            margin-top:70px;
         }
         hr{
             width: 320px;
