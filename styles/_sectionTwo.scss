@@ -16,7 +16,7 @@
       }
       #{&}-third-header{
         margin-top: 50px;
-        margin-left: 605px;
+        margin-left: 75px;
       }
       hr{
         border:solid rgb(194, 193, 193); 
@@ -35,7 +35,6 @@
      .contact-us{
         margin-top: -110px;
         @include flex(space-between);
-        width: 1470px;
         margin-left: -95px;
 
       }
@@ -54,7 +53,40 @@
      p{
       writing-mode: vertical-lr;
       font-weight:bold;
+      position: absolute;
+      right:8px;
   
      }
      
 }
+
+@include xs{
+  .sectionTwo{
+    margin-left: -20px;
+  h1{
+     font-size:  70px;
+  }
+  img{
+    width: 250px;
+    margin-left:-43px;
+    margin-top: -90px;
+  }
+  #{&}-second-header{
+    margin-top: 2px;
+    margin-left: 100px;
+  }
+  #{&}-third-header{
+    margin-top: 80px;
+    margin-left: 62px;
+}
+.contact-us{
+  flex-direction: column;
+}
+p{
+ display: none;
+}
+.bottomhr{
+  margin-bottom:160px ;
+}
+}
+} 

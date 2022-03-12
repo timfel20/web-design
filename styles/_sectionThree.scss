@@ -1,14 +1,7 @@
 .sectionThree{
     @include flex(center);
-    margin-top: 100px;
-    margin-bottom: 200px;
+    align-items: center;
+    margin: 100px 2px 200px 9px;
     text-indent: 20px;
     text-align: left;
-
-    &:before{
-        content: '.';
-        color: $pink;
-        font-size: 100px;
-        margin-bottom: 95px;
-    }
 }

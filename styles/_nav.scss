@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: $direction;
 }
+.container{
+    overflow-x: hidden;
+}
 
 nav{
     @include flex(space-between);
@@ -16,15 +19,25 @@ nav{
     }
     .menus{
         display: flex;
+        cursor:pointer;
 
         column-gap:30px;
-        p{
+        li{
+            list-style: none;
             &:hover{
                 background-color: rgb(55, 157, 197);
             }
         }
         
     }
+    .burger{
+        width:28px;
+        position: absolute;
+        right: 40px;
+        display: none;
+        cursor: pointer;
+    }
+    
 }
 .nav-colored {
     background-color: rgb(228, 228, 228);
@@ -32,3 +45,41 @@ nav{
 .nav-transparent {
     background-color:"white"
 }
+.nav-contact{
+    display: none;
+}
+ @include xs{
+    nav{
+        position: relative;
+        margin-top: 28px;
+      /*   .logo{
+    margin-left: 1px;
+        } */
+    .menus{
+        flex-wrap: wrap;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        width: 200px;
+        height: 30vh;
+        background-color: aquamarine;
+    }
+    .burger{
+        display: block;
+    }
+    .cancel{
+        display: none;
+    }
+    .nav-contact {
+        display: block;
+       
+    }
+    .active{
+        display: block;
+    }
+    .none{
+        display:none;
+    }
+}
+} 

@@ -1,4 +1,6 @@
 navbar = document.querySelector('.navbar')
+menu =document.querySelector('.menus')
+navbar = document.querySelector('.burger')
 
 window.addEventListener('scroll', function(e){
     if (window.scrollY >= 200 ) {
@@ -12,4 +14,12 @@ window.addEventListener('scroll', function(e){
 })
    
 
-console.log(navbar)
+navbar.addEventListener('click', showMenu=(e)=>{
+   if(e.currentTarget.id == navbar){
+   menu.classList.add('active')
+   navbar.classList.add('none')
+}else{
+   menu.classList.remove('active')
+   navbar.classList.remove('none')
+}
+})
