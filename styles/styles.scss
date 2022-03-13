@@ -6,12 +6,15 @@
 @import './sectionFour';
 @import './sectionFive';
 @import './footer';
-@import './cart';
-
 
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'DM Sans';
+}
+@include xs{
+    .container{
+        overflow-x: hidden;
+    }
 }

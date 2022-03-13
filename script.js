@@ -2,6 +2,8 @@ navbar = document.querySelector('.navbar')
 menu =document.querySelector('.menus')
 burger = document.querySelector('.burger')
 cancel = document.querySelector('.cancel')
+mugclassname = document.querySelector('.mug1')
+hiddenmug = document.querySelector('.hide')
 
 
 
@@ -52,7 +54,7 @@ function changeBgrey(){
    document.querySelector('.grey-bottle').src="./images/Bottle1.png";
 }
 
-let products = [
+/* let products = [
    {
       name:"t shirt",
       description:"gucci brand",
@@ -73,7 +75,19 @@ let products = [
       description:"resistant premium water flask",
       color:"grey"
    }
-]
+] */
 
+//function to make mugs change color on a time interval of 3 seconds
+let mugImages = ["./images/Mug1.png","./images/Mug2.png"]
+let i = 0;
 
+function changeMugcolor(){
+   if (++i >= mugImages.length)
+     i = 0;
+
+     mugclassname.src = mugImages[i]
+
+}
+setInterval(changeMugcolor,3000)
+console.log(mugclassname)
 
