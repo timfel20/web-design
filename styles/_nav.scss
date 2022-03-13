@@ -71,7 +71,8 @@ nav{
         height: 70vh;
         background-color: rgb(189, 250, 242);
         z-index: 1;
-        transition: transform 3s ease-in;
+        transition: transform 3s ease-out;
+       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         
     }
     .burger{
@@ -94,7 +95,7 @@ nav{
         color: rgb(238, 106, 194);
         font-size: 17px;
         font-weight:bolder;
-        transition: transform 3s ease-in;
+        transition: transform 5s ease-in;
         
     }
     .none{

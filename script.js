@@ -38,14 +38,14 @@ burger.addEventListener('click', function (event){
 })  
 
 function changeSpink(){
-   document.querySelector('.pink-shirt').src="./images/Tshirt2.png";
+   document.querySelector('.grey-shirt').src="./images/Tshirt1.png";
    
 }
 function changeSgrey(){
-   document.querySelector('.pink-shirt').src="./images/Tshirt1.png";
-   document.querySelector('.grey-shirt').classList.add('none');
+   document.querySelector('.grey-shirt').src="./images/Tshirt2.png";
+   document.querySelector('.pink-shirt').classList.add('none');
 }
-//note: In the functions below, the grey bottle is mistaken for the pink
+
 function changeBpink(){
    document.querySelector('.grey-bottle').src="./images/Bottle2.png";
    document.querySelector('.pink-bottle').classList.add('none');
@@ -77,7 +77,6 @@ function changeBgrey(){
    }
 ] */
 
-//function to make mugs change color on a time interval of 3 seconds
 let mugImages = ["./images/Mug1.png","./images/Mug2.png"]
 let i = 0;
 

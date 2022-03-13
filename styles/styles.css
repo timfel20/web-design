@@ -86,10 +86,12 @@ nav .burger, nav .cancel {
     height: 70vh;
     background-color: #bdfaf2;
     z-index: 1;
-    -webkit-transition: -webkit-transform 3s ease-in;
-    transition: -webkit-transform 3s ease-in;
-    transition: transform 3s ease-in;
-    transition: transform 3s ease-in, -webkit-transform 3s ease-in;
+    -webkit-transition: -webkit-transform 3s ease-out;
+    transition: -webkit-transform 3s ease-out;
+    transition: transform 3s ease-out;
+    transition: transform 3s ease-out, -webkit-transform 3s ease-out;
+    -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
   nav .burger, nav .cancel {
     display: block;
@@ -120,10 +122,10 @@ nav .burger, nav .cancel {
     color: #ee6ac2;
     font-size: 17px;
     font-weight: bolder;
-    -webkit-transition: -webkit-transform 3s ease-in;
-    transition: -webkit-transform 3s ease-in;
-    transition: transform 3s ease-in;
-    transition: transform 3s ease-in, -webkit-transform 3s ease-in;
+    -webkit-transition: -webkit-transform 5s ease-in;
+    transition: -webkit-transform 5s ease-in;
+    transition: transform 5s ease-in;
+    transition: transform 5s ease-in, -webkit-transform 5s ease-in;
   }
   nav .none {
     display: none;
@@ -544,9 +546,7 @@ nav .burger, nav .cancel {
 .sectionFive .pink-button {
   background-color: #FB088C;
   border: none;
-  color: aliceblue;
-  font-weight: 900;
-  place-content: center;
+  margin-right: 130px;
 }
 
 .sectionFive .grey-button {
@@ -727,9 +727,9 @@ nav .burger, nav .cancel {
         -ms-flex-align: start !important;
             align-items: flex-start !important;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 5px;
     padding-left: 20px;
   }
