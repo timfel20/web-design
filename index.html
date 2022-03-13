@@ -16,14 +16,16 @@
     <div class="container">
         <nav class ="navbar">
             <img class="logo" src="./images/logo.png"></img>
-            <ul class="menus">
-            <li><a>Products</a></li>   
-            <li><a>Contact us</a></li> 
-            <li><a>Cart</a></li> 
-            <li class="nav-contact"><a>contact-us</a></li> 
-            </ul>
+            <div class="nav-items">
+                <ul class="menus">
+                    <li><a>Products</a></li>   
+                    <li><a>Contact us</a></li> 
+                    <li><a>Cart</a></li> 
+                    <li class="nav-contact"><a>contact-us</a></li> 
+                </ul>
+            </div>
             <img class="burger" src="./icons/menu.png"/>
-            <img class="burger cancel" src="./icons/cancel.png"/>
+            <img class="cancel" src="./icons/cancel.png"/>
         </nav>
         <section class="sectionTwo">
             <h1 class="sectionTwo-first-header">LOREM</h1>
@@ -49,35 +51,35 @@
         </section>
         <section class="sectionFour">
                 <h2>lorem</h2>
-                <img class="product-images shirt" src="./images/Tshirt1.png"/>
-                <img class="product-images shirt"src="./images/Tshirt2.png"/>
+                <img class="product-images pink-shirt" />
+                <img class="product-images grey-shirt"src="./images/Tshirt2.png"/>
                 <p>Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor mollis purus.</p>
                 <div class ="buttons-and-buy">
                     <div class="product-colors-button">
-                        <button class="grey-button btn">pink</button>
-                        <button class="pink-button btn">grey</button>
+                        <button onclick ="changeSpink()" class="grey-button btn grey-shirt-button"></button>
+                        <button onclick ="changeSgrey()"class="pink-button btn pink-shirt-button"></button>
                     </div>
                     <div class="buy">
                         <p>Buy</p>
-                        <button><img class="buy-img" src="./images/Buy.png" alt="buy"></button>
+                        <img class="buy-img" src="./icons/cart.png" alt="buy"><a></a></img>
                     </div>
                 </div>
                 <hr>
         </section>
         <section class="sectionFive">
             <h2>lorem</h2>
-            <img class="product-images bottle" src="./images/bottle1.png"/>
-            <img class="product-images bottle" src="./images/bottle2.png"/>
+            <img class="product-images pink-bottle" />
+            <img class="product-images grey-bottle" src="./images/bottle2.png"/>
             <p>Etiam vulputate dui efficitur ultrices pharetra. Praesent tempor mollis purus.</p>
             <div class ="buttons-and-buy">
                 <div class="product-colors-button">
-                    <button class="grey-button btn">pink</button>
-                    <button class="pink-button btn">grey</button>
+                    <button onclick ="changeBpink()" class="grey-button btn grey-bottle-button"></button>
+                    <button onclick ="changeBgrey()" class="pink-button btn pink-bottle-button"></button>
                 </div>
                 <div>
                     <div class="buy">
                         <p>Buy</p>
-                        <button><img class="buy-img" src="./images/Buy.png" alt="buy"></button>
+                        <img class="buy-img" src="./icons/cart.png" alt="buy"><a></a></img>
                     </div>
                 </div>
             </div>
@@ -113,6 +115,6 @@
            </div>
         </footer>
    </div>
- <script src ="script.js"></script>   
+ <script src="script.js"></script>   
 </body>
 </html>

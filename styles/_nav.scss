@@ -3,17 +3,14 @@
     align-items: center;
     justify-content: $direction;
 }
-.container{
-    overflow-x: hidden;
-}
 
 nav{
     @include flex(space-between);
-     position: sticky;
+    position: sticky;
      top:0; 
-     padding: (0 30px 0 40px);
-     transition-property: sliding-vertically;
-     transition-duration: 2s;
+     padding: (0 40px 0 30px);
+     transition: all 0.35s ease;
+     height: 70px;
     img{
         width:120px;
     }
@@ -31,20 +28,27 @@ nav{
         
     }
     .burger{
-        width:28px;
+        width:24px;
         position: absolute;
         right: 40px;
         display: none;
         cursor: pointer;
     }
+    .cancel{
+        @extend .burger;
+    }
     
 }
 .nav-colored {
     background-color: rgb(228, 228, 228);
+     z-index: 1;
+    color:rgb(236, 86, 179);
+    font-weight: 900;
 }
 .nav-transparent {
-    background-color:"white"
+    background-color:"white";
 }
+
 .nav-contact{
     display: none;
 }
@@ -52,22 +56,24 @@ nav{
     nav{
         position: relative;
         margin-top: 28px;
-      /*   .logo{
-    margin-left: 1px;
-        } */
-    .menus{
-        flex-wrap: wrap;
-        gap: 7px;
-        align-items: center;
-        justify-content: center;
+        height: 20px;
+
+    .menus{ 
+        position: absolute;
+        top: 29px;
+        right: 4px;
         display: none;
-        width: 200px;
-        height: 30vh;
-        background-color: aquamarine;
+        width: 240px;
+        height: 50vh;
+        background-color: rgb(189, 250, 242);
+        padding:60px;
+        z-index: 1;
+        
     }
     .burger{
         display: block;
     }
+
     .cancel{
         display: none;
     }
@@ -76,7 +82,14 @@ nav{
        
     }
     .active{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        @include flex(center);
+        align-items: center;
+        gap:110px;
+        color: rgb(238, 106, 194);
+        font-size: 17px;
+        font-weight:bolder;
     }
     .none{
         display:none;

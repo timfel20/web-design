@@ -32,16 +32,32 @@
   }
     button{
       width: 70px;
-      height: 30px;
+      height: 40px;
       border-radius: 10px;
+      &:hover {
+          filter: brightness(1.05) contrast(1.05);
+          transition: all 0.3s ease-out;
+          width: 78px;
+          height: 45px;
   }
+ 
+}
   .pink-button{
     background-color: $pink;
-
+    border: none;
+    color: aliceblue;
+    font-weight: 900;
+    place-content: center;
+    
   }
 
   .grey-button{
       background-color: $grey;
+      border: none;
+      color: aliceblue;
+      font-weight: 900;
+      text-decoration: solid;
+      place-content: center;
   }
   hr{
     border:solid rgb(179, 175, 175); 
@@ -49,8 +65,12 @@
     margin: 22px 0 21px; 
     height: 0;
     width: 580px;
-
   }
+  .buy-img{
+    width: 28px;
+    height: 28px;
+  }
+
 }
  @include xs{
   .sectionFive{

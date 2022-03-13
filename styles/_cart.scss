@@ -1,0 +1,22 @@
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:300px;
+    h1{
+        @include flex(center);
+        align-items: center;
+    }
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 200px;
+    }
+    img{
+        width: 100px;
+    }
+}
