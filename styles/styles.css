@@ -267,8 +267,41 @@ nav .burger, nav .cancel {
           justify-content: center;
   align-items: center;
   margin: 100px 2px 200px 9px;
-  text-indent: 20px;
+  text-indent: 30px;
   text-align: left;
+  position: relative;
+  list-style: none;
+}
+
+.sectionThree ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.sectionThree li {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.sectionThree ul li::before {
+  content: "\2022";
+  padding-right: 0.5em;
+  color: #FB088C;
+  font-weight: 900;
+  font-size: 50px;
+  padding-top: -20px;
+  position: absolute;
+  top: -4px;
+  margin-left: -63px;
 }
 
 .sectionFour {
@@ -280,8 +313,13 @@ nav .burger, nav .cancel {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 1250px;
+  margin-top: 1000px;
   margin: 40px;
+}
+
+.sectionFour h2 {
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .sectionFour .product-images {
@@ -289,7 +327,9 @@ nav .burger, nav .cancel {
   position: absolute;
   width: 350px;
   left: 120px;
-  margin-top: -65px;
+  margin-top: 1px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .sectionFour hr {
@@ -298,11 +338,6 @@ nav .burger, nav .cancel {
   margin: 22px 0 21px;
   height: 0;
   width: 580px;
-}
-
-.sectionFour .shirt {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 .sectionFour button {
@@ -388,7 +423,7 @@ nav .burger, nav .cancel {
   }
   .sectionFour .product-images {
     width: 220px;
-    margin-top: 70px;
+    margin-top: 145px;
   }
   .sectionFour hr {
     width: 320px;
@@ -404,11 +439,16 @@ nav .burger, nav .cancel {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 300px;
+  margin-top: 150px;
   margin-right: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.sectionFive h2 {
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .sectionFive .product-images {
@@ -416,6 +456,7 @@ nav .burger, nav .cancel {
   position: absolute;
   width: 200px;
   right: 100px;
+  margin-top: 22px;
 }
 
 .sectionFive .bottle {
@@ -531,7 +572,7 @@ nav .burger, nav .cancel {
   .sectionFive .product-images {
     width: 190px;
     left: 120px;
-    margin-top: 50px;
+    margin-top: 120px;
   }
   .sectionFive hr {
     width: 320px;
@@ -608,7 +649,7 @@ nav .burger, nav .cancel {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 150px;
+  gap: 130px;
 }
 
 .footer .terms-conditions {
@@ -621,8 +662,8 @@ nav .burger, nav .cancel {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
 }
 
 .footer .footer-submit {
@@ -691,7 +732,7 @@ nav .burger, nav .cancel {
             align-items: flex-start;
   }
   .footer-container input {
-    width: 270px;
+    width: 200px;
   }
   .footer-container .check-terms {
     -webkit-box-orient: vertical;
@@ -713,8 +754,8 @@ nav .burger, nav .cancel {
   .footer-submit {
     padding-top: 90px;
   }
-  .name-input {
-    width: 270px;
+  input {
+    width: 180px !important;
   }
 }
 

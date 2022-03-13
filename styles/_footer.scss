@@ -37,11 +37,11 @@
     }
      .check-terms{
         @include flex(center);
-        gap: 150px;
+        gap: 130px;
      }
      .terms-conditions{
        @include flex(center);
-       column-gap: 20px;
+       column-gap: 7px;
      }
 
      #{&}-submit{
@@ -92,7 +92,7 @@
      align-items: flex-start;
     }
     input{
-      width: 270px;
+      width: 200px;
     }
     .check-terms{
     flex-direction: column;
@@ -110,7 +110,7 @@
     .footer-submit{
       padding-top: 90px;
     }
-    .name-input{
-      width: 270px;
+    input{
+      width: 180px !important;
     }
 }
