@@ -66,8 +66,6 @@ nav .burger, nav .cancel {
     position: relative;
     margin-top: 28px;
     height: 20px;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
     width: auto;
   }
   nav .menus {
@@ -88,6 +86,10 @@ nav .burger, nav .cancel {
     height: 70vh;
     background-color: #bdfaf2;
     z-index: 1;
+    -webkit-transition: -webkit-transform 3s ease-in;
+    transition: -webkit-transform 3s ease-in;
+    transition: transform 3s ease-in;
+    transition: transform 3s ease-in, -webkit-transform 3s ease-in;
   }
   nav .burger, nav .cancel {
     display: block;
@@ -118,6 +120,10 @@ nav .burger, nav .cancel {
     color: #ee6ac2;
     font-size: 17px;
     font-weight: bolder;
+    -webkit-transition: -webkit-transform 3s ease-in;
+    transition: -webkit-transform 3s ease-in;
+    transition: transform 3s ease-in;
+    transition: transform 3s ease-in, -webkit-transform 3s ease-in;
   }
   nav .none {
     display: none;
@@ -145,7 +151,7 @@ nav .burger, nav .cancel {
 .sectionTwo .sectionTwo-first-header {
   margin-bottom: 2px;
   z-index: -20;
-  margin-left: -28px;
+  margin-right: 60px;
 }
 
 .sectionTwo .sectionTwo-second-header {
@@ -313,6 +319,12 @@ nav .burger, nav .cancel {
   position: absolute;
   top: -4px;
   margin-left: -63px;
+}
+
+@media (max-width: 549px) {
+  .sectionThree {
+    margin-right: 40px;
+  }
 }
 
 .sectionFour {
@@ -636,18 +648,6 @@ nav .burger, nav .cancel {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.footer .tick-box {
-  display: -ms-grid;
-  display: grid;
-}
-
-.footer .icon {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
 }
 
 .footer .check-terms {

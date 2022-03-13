@@ -28,13 +28,7 @@
         flex-direction: column
      }
 
-    .tick-box{
-      display: grid;
-    }
-    .icon{
-      grid-column: 1;
-      grid-row: 1;
-    }
+   
      .check-terms{
         @include flex(center);
         gap: 130px;
