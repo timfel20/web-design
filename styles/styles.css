@@ -189,13 +189,32 @@ nav .burger, nav .cancel {
   color: #212222;
 }
 
-.sectionTwo p {
+.sectionTwo .contact-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-weight: bold;
   position: absolute;
   right: 8px;
+  margin-bottom: 42px;
+}
+
+.sectionTwo .fp {
+  color: #FB088C;
+  -webkit-text-size-adjust: 20px;
+     -moz-text-size-adjust: 20px;
+      -ms-text-size-adjust: 20px;
+          text-size-adjust: 20px;
+}
+
+.sectionTwo .sp {
+  font-weight: bolder;
 }
 
 .sectionTwo .none {
@@ -287,32 +306,30 @@ nav .burger, nav .cancel {
 }
 
 .sectionFour button {
-  width: 70px;
-  height: 30px;
+  border: 0;
   border-radius: 10px;
+  padding: 15px 30px;
+  width: 50px;
+  height: 40px;
+  transition: border-radius 3s;
+  -webkit-transition: border-radius 3s;
 }
 
 .sectionFour button:hover {
-  -webkit-filter: brightness(1.05) contrast(1.05);
-          filter: brightness(1.05) contrast(1.05);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  width: 78px;
-  height: 45px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .sectionFour .pink-button {
   background-color: #FB088C;
   border: none;
-  font-weight: 900;
-  place-content: center;
 }
 
 .sectionFour .grey-button {
   background-color: #212222;
   border: none;
-  font-weight: 900;
-  place-content: center;
 }
 
 .sectionFour .none {
@@ -429,19 +446,35 @@ nav .burger, nav .cancel {
   gap: 12px;
 }
 
+.sectionFive .bottle-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 135px;
+}
+
 .sectionFive button {
-  width: 70px;
-  height: 40px;
+  border: 0;
   border-radius: 10px;
+  padding: 15px 30px;
+  width: 50px;
+  height: 40px;
+  transition: border-radius 3s;
+  -webkit-transition: border-radius 3s;
 }
 
 .sectionFive button:hover {
-  -webkit-filter: brightness(1.05) contrast(1.05);
-          filter: brightness(1.05) contrast(1.05);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  width: 78px;
-  height: 45px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .sectionFive .pink-button {
@@ -602,7 +635,7 @@ nav .burger, nav .cancel {
   background: none;
   border: transparent;
   border-bottom: 3px solid #a09d9d;
-  width: 530px;
+  width: 436px;
   height: 30px;
   outline: none;
   color: #a09d9d;

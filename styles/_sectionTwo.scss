@@ -50,12 +50,20 @@
          font-weight: 900;
          color:$grey; 
      }
-     p{
-      writing-mode: vertical-lr;
-      font-weight:bold;
-      position: absolute;
-      right:8px;
-  
+     .contact-bar{
+       display: flex;
+       flex-direction: row;
+        writing-mode: vertical-lr;
+        position: absolute;
+        right:8px;
+        margin-bottom: 42px;
+    }
+     .fp {
+      color: #FB088C;
+      text-size-adjust: 20px;
+     }
+    .sp{
+      font-weight:bolder;
      }
      .none{
        display: none;
