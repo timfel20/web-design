@@ -12,8 +12,8 @@ nav {
   position: sticky;
   top: 0;
   padding: 0 40px 0 30px;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: 0.35s ease-in;
+  transition: 0.35s ease-in;
   height: 70px;
 }
 
@@ -66,16 +66,27 @@ nav .burger, nav .cancel {
     position: relative;
     margin-top: 28px;
     height: 20px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    width: auto;
   }
   nav .menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: 29px;
     right: 4px;
     display: none;
-    width: 240px;
-    height: 50vh;
+    width: 100%;
+    height: 70vh;
     background-color: #bdfaf2;
-    padding: 60px;
     z-index: 1;
   }
   nav .burger, nav .cancel {
@@ -575,7 +586,7 @@ nav .burger, nav .cancel {
     margin-top: 120px;
   }
   .sectionFive hr {
-    width: 320px;
+    width: 310px;
   }
 }
 
@@ -704,6 +715,10 @@ nav .burger, nav .cancel {
   height: 30px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+.footer a {
+  color: #005fdb;
 }
 
 @media (max-width: 549px) {

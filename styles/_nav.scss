@@ -9,7 +9,7 @@ nav{
     position: sticky;
      top:0; 
      padding: (0 40px 0 30px);
-     transition: all 0.35s ease;
+     transition: 0.35s ease-in;
      height: 70px;
     img{
         width:120px;
@@ -41,7 +41,7 @@ nav{
 }
 .nav-colored {
     background-color: rgb(228, 228, 228);
-     z-index: 1;
+    z-index: 1;
     color:rgb(236, 86, 179);
     font-weight: 900;
 }
@@ -57,16 +57,20 @@ nav{
         position: relative;
         margin-top: 28px;
         height: 20px;
+        transition: all 300ms;
+        width: auto;
 
     .menus{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 29px;
         right: 4px;
         display: none;
-        width: 240px;
-        height: 50vh;
+        width: 100%;
+        height: 70vh;
         background-color: rgb(189, 250, 242);
-        padding:60px;
         z-index: 1;
         
     }
@@ -90,6 +94,7 @@ nav{
         color: rgb(238, 106, 194);
         font-size: 17px;
         font-weight:bolder;
+        
     }
     .none{
         display:none;
