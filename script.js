@@ -6,7 +6,7 @@ mugclassname = document.querySelector('.mug1')
 hiddenmug = document.querySelector('.hide')
 
 
-window.addEventListener('scroll', function(e){
+/* window.addEventListener('scroll', function(e){
     if (window.scrollY >= 200 ) {
         navbar.classList.add("nav-colored");
         navbar.classList.remove("nav-transparent");
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function(e){
         navbar.classList.add("nav-transparent");
         navbar.classList.remove("nav-colored");
      }
-})
+}) */
 /* [document.querySelector('.burger'), document.querySelector('.cancel')].forEach(item => {
    item.addEventListener('click', function (event){
       if(event.target == burger){

@@ -8,9 +8,8 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
   width: 100%;
-  padding: 0 40px 0 40px;
+  /*  padding: (0 40px 0 40px); */
   -webkit-transition: 0.35s ease-in;
   transition: 0.35s ease-in;
   height: 70px;
@@ -25,7 +24,7 @@ nav .menus {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  margin-right: 76px;
+  /*   margin-right: 76px; */
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
@@ -41,22 +40,20 @@ nav .menus li:hover {
 nav .burger, nav .cancel {
   width: 24px;
   position: absolute;
-  right: 40px;
+  right: 15px;
   display: none;
   cursor: pointer;
 }
 
-.nav-colored {
-  background-color: #e4e4e4;
-  z-index: 1;
-  color: #ec56b3;
-  font-weight: 900;
+/* .nav-colored {
+    background-color: rgb(228, 228, 228);
+    z-index: 1;
+    color:rgb(236, 86, 179);
+    font-weight: 900;
 }
-
 .nav-transparent {
-  background-color: "white";
-}
-
+    background-color:"white";
+} */
 .nav-contact {
   display: none;
 }
@@ -69,20 +66,10 @@ nav .burger, nav .cancel {
     width: auto;
   }
   nav .menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: absolute;
     top: 29px;
-    right: 0px;
+    width: 63%;
     display: none;
-    width: 100%;
     height: 70vh;
     background-color: #bdfaf2;
     z-index: 1;
@@ -122,12 +109,15 @@ nav .burger, nav .cancel {
     color: #ee6ac2;
     font-size: 17px;
     font-weight: bolder;
+    padding-right: 52px;
+    width: 100%;
+    left: 0;
+    padding-left: 40px;
+    margin-left: -36px;
     -webkit-transition: -webkit-transform 5s ease-in;
     transition: -webkit-transform 5s ease-in;
     transition: transform 5s ease-in;
     transition: transform 5s ease-in, -webkit-transform 5s ease-in;
-    width: 100%;
-    right: -75px;
   }
   nav .none {
     display: none;
@@ -151,7 +141,8 @@ nav .burger, nav .cancel {
   position: absolute;
   right: 0px;
   top: 494px;
-  height: 140px;
+  height: 100px;
+  cursor: pointer;
 }
 
 .contact-us {
@@ -167,16 +158,25 @@ nav .burger, nav .cancel {
 }
 
 .contact-hyphen {
-  color: #FB088C;
   -webkit-text-size-adjust: 20px;
      -moz-text-size-adjust: 20px;
       -ms-text-size-adjust: 20px;
           text-size-adjust: 20px;
 }
 
+.contact-hyphen a {
+  text-decoration: none;
+  color: #FB088C;
+}
+
 .contact-text {
-  font-weight: bolder;
+  font-weight: 400;
   width: auto;
+}
+
+.a {
+  text-decoration: none;
+  color: #212222;
 }
 
 .none {
@@ -388,7 +388,7 @@ nav .burger, nav .cancel {
   z-index: -1;
   position: absolute;
   width: 350px;
-  left: 120px;
+  left: 124px;
   margin-top: 1px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
@@ -399,7 +399,7 @@ nav .burger, nav .cancel {
   border-width: 1px 0 0;
   margin: 22px 0 21px;
   height: 0;
-  width: 580px;
+  width: 520px;
 }
 
 .sectionFour button {
@@ -600,7 +600,7 @@ nav .burger, nav .cancel {
   border-width: 1px 0 0;
   margin: 22px 0 21px;
   height: 0;
-  width: 580px;
+  width: 585px;
 }
 
 .sectionFive .buy-img {
@@ -653,10 +653,12 @@ nav .burger, nav .cancel {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  align-items: center;
   color: #c0c9c8;
   background-color: #212222;
-  padding-bottom: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
 }
 
 .footer p {
@@ -671,9 +673,6 @@ nav .burger, nav .cancel {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .footer .phone {
@@ -827,8 +826,8 @@ html, body {
 .container2 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 @media (max-width: 549px) {

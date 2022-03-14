@@ -6,12 +6,10 @@
 
      #{&}-container{
       @include flex(space-around);
-      align-items: center;
         color: rgb(192, 201, 200);
          background-color: #212222; 
-         padding-bottom: 30px;
-
-        
+         align-items: flex-start;   
+         padding-top: 10px;
      }
 
      p{
@@ -22,13 +20,13 @@
      #{&}-details{
          display: flex;
           flex-direction: column;
-          align-items: flex-start;
+          
 
      }
 
      .phone{
         align-items: flex-start;
-        flex-direction: column
+        flex-direction: column;
      }
 
    
