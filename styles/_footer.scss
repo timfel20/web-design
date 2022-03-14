@@ -2,7 +2,6 @@
      margin-top: 250px;
      background-color: #212222; 
      min-height:15vh; 
-    max-width: 100%;
 
 
      #{&}-container{
@@ -11,8 +10,8 @@
         color: rgb(192, 201, 200);
          background-color: #212222; 
          padding-bottom: 30px;
-        max-width: fit-content;
-         padding: 10px;
+
+        
      }
 
      p{
@@ -35,7 +34,7 @@
    
      .check-terms{
         @include flex(center);
-       gap:10px;
+       gap:50px;
        align-items: center
      }
      .terms-conditions{
@@ -45,6 +44,8 @@
 
      #{&}-submit{
      display: flex;
+     padding-top: 0px;
+     padding-right: 20px;
      }
      input{
       background: none;
@@ -94,7 +95,7 @@
      align-items: flex-start;
     }
     input{
-      width: 200px;
+      width: 305px;
     }
     .check-terms{
     flex-direction: column;

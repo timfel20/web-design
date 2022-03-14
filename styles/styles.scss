@@ -24,15 +24,9 @@ html, body{
 }
 @include xs{
    html, body{
-        overflow-x: hidden;
+        overflow-x: hidden; 
         position: relative;
         width: 100%;
-    }
-    .container{
-        
-    }
-    .container2{
-       
     }
    
 }

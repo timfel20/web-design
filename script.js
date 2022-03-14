@@ -6,7 +6,6 @@ mugclassname = document.querySelector('.mug1')
 hiddenmug = document.querySelector('.hide')
 
 
-
 window.addEventListener('scroll', function(e){
     if (window.scrollY >= 200 ) {
         navbar.classList.add("nav-colored");
