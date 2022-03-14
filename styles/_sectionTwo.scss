@@ -1,11 +1,10 @@
 .sectionTwo{
      @include flex(center);
      flex-direction:column;
-     position: relative;
      margin-left: -45px;
 
      #{&}-first-header{
-        margin-bottom: 2px;
+        margin-bottom: 36px;
         z-index: -20;
         margin-right: 60px;
       }
@@ -15,29 +14,29 @@
         margin-left: 225px;
       }
       #{&}-third-header{
-        margin-top: 50px;
-        margin-left: 75px;
+        margin-top:-52px;
       }
       hr{
         border:solid rgb(194, 193, 193); 
         border-width: 1px 0 0; 
-        margin: 22px 0 21px; 
-        height: 0;
+        margin: 0px;
         width: 100%;
         z-index: -25;
 
       }
       .bottomhr{
-        position: absolute;
-        margin-top: 208px;
+        /* position: absolute;
+        margin-top: 208px; */
+        margin-top: -80px;
+        margin-bottom: 78px;
       }
       
-     .contact-us{
+    /*  .contact-us{
         margin-top: -110px;
         @include flex(space-between);
-        margin-left: -95px;
+        
 
-      }
+      } */
      img{
          width:360px;
          position: absolute;
@@ -51,21 +50,22 @@
          color:$grey; 
      }
     
-     .contact-bar{
+    /*  .contact-bar{
        display: flex;
-       flex-direction: row;
+       flex-direction: row; 
         writing-mode: vertical-lr;
         position: absolute;
-        right:8px;
+        right:0px;
         margin-bottom: 42px;
-    }
-     .fp {
+
+    } */
+    /*  .fp {
       color: #FB088C;
       text-size-adjust: 20px;
      }
     .sp{
       font-weight:bolder;
-     }
+     } */
      .none{
        display: none;
      }
@@ -88,9 +88,13 @@
     margin-left: 100px;
   }
   #{&}-third-header{
-    margin-top: 80px;
-    margin-left: 62px;
-}
+    margin-top: -21px;
+    margin-left: -30px;
+  }
+  .bottomhr{
+    margin-top: -36px;
+    margin-bottom: 36px !important;
+  }
 .contact-us{
   flex-direction: column;
 }

@@ -2,6 +2,8 @@
      margin-top: 250px;
      background-color: #212222; 
      min-height:15vh; 
+    max-width: 100%;
+
 
      #{&}-container{
       @include flex(space-around);
@@ -9,6 +11,8 @@
         color: rgb(192, 201, 200);
          background-color: #212222; 
          padding-bottom: 30px;
+        max-width: fit-content;
+         padding: 10px;
      }
 
      p{
@@ -31,11 +35,12 @@
    
      .check-terms{
         @include flex(center);
-        gap: 130px;
+       gap:10px;
+       align-items: center
      }
      .terms-conditions{
        @include flex(center);
-       column-gap: 7px;
+       column-gap: 3px;
      }
 
      #{&}-submit{
@@ -58,8 +63,8 @@
      .footer-submit{
        display: flex;
        align-items: center;
-      column-gap: 10px;
-       margin-right: 50px;
+        /*column-gap: 10px;
+       margin-right: 50px; */
      }
      img{
        width: 30px;

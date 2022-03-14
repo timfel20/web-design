@@ -7,14 +7,32 @@
 @import './sectionFive';
 @import './footer';
 
-body{
+html, body{
+    font-family: 'DM Sans';
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'DM Sans';
+}
+.container1{
+   
+    position: relative;
+}
+.container2{
+    grid-template-columns: 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 @include xs{
-    .container{
+   html, body{
         overflow-x: hidden;
+        position: relative;
+        width: 100%;
     }
+    .container{
+        
+    }
+    .container2{
+       
+    }
+   
 }

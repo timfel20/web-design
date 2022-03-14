@@ -8,7 +8,7 @@ nav{
     @include flex(space-between);
     position: sticky;
      top:0; 
-     padding: (0 40px 0 30px);
+     padding: (0 40px 0 40px);
      transition: 0.35s ease-in;
      height: 70px;
     img{
@@ -102,4 +102,34 @@ nav{
         display:none;
     }
 }
+.contact-bar{
+    display: none !important;
+}
 } 
+.contact-bar{
+      display: flex;
+     flex-direction: row; 
+      writing-mode: vertical-lr;
+      position: absolute;
+      right:0px;
+      top: 494px;
+      height: 140px
+
+  }
+  .contact-us{
+   
+    @include flex(space-between);
+    
+
+  }
+  .contact-hyphen {
+    color: #FB088C;
+    text-size-adjust: 20px;
+   }
+  .contact-text{
+    font-weight:bolder;
+    width: auto;
+   }
+   .none{
+    display: none;
+  }
