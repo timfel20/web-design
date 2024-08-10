@@ -21,6 +21,11 @@ html, body{
     grid-template-columns: 1fr;
     margin-left: 7%;
     margin-right: 7%;
+
+    .logo{
+        width: 35px;
+        height: 35px;
+    }
 }
 @include xs{
    html, body{

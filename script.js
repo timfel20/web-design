@@ -81,11 +81,12 @@ let i = 0;
 
 function changeMugcolor(){
    if (++i >= mugImages.length)
-     i = 0;
+   i = 0;
 
-     mugclassname.src = mugImages[i]
-
+   mugclassname.src = mugImages[i]
 }
+
+changeMugcolor(); 
 setInterval(changeMugcolor,3000)
 console.log(mugclassname)
 

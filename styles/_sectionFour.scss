@@ -41,15 +41,21 @@
             border-top-right-radius: 10px;
     }
   }
+
+    .text{
+        color: #000000;
+    }
     .pink-button{
         background-color: $pink;
         border: none;
+        cursor: pointer;
 
     }
     
     .grey-button{
         background-color: $grey;
         border: none;
+        cursor: pointer;
        
     }
     

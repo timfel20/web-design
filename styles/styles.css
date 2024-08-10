@@ -70,7 +70,7 @@ nav .burger, nav .cancel {
     top: 29px;
     width: 63%;
     display: none;
-    height: 70vh;
+    height: 85vh;
     background-color: #bdfaf2;
     z-index: 1;
     -webkit-transition: -webkit-transform 3s ease-out;
@@ -422,11 +422,13 @@ nav .burger, nav .cancel {
 .sectionFour .pink-button {
   background-color: #FB088C;
   border: none;
+  cursor: pointer;
 }
 
 .sectionFour .grey-button {
   background-color: #212222;
   border: none;
+  cursor: pointer;
 }
 
 .sectionFour .none {
@@ -580,19 +582,25 @@ nav .burger, nav .cancel {
   border-top-right-radius: 10px;
 }
 
+.sectionFour .text{
+    color: #000000;
+}
+
+.sectionFive .text{
+  color: #000000;
+}
+
 .sectionFive .pink-button {
   background-color: #FB088C;
   border: none;
+  cursor: pointer;
 }
 
-.sectionFive .grey-button {
-  background-color: white;
+.grey-button{
+  background-color: #212222;
   border: none;
-  color: aliceblue;
-  font-weight: 900;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  place-content: center;
+  cursor: pointer;
+ 
 }
 
 .sectionFive hr {
@@ -828,6 +836,11 @@ html, body {
       grid-template-columns: 1fr;
   margin-left: 7%;
   margin-right: 7%;
+
+  .logo{
+    width: 35px;
+    height: 35px;
+}
 }
 
 @media (max-width: 549px) {

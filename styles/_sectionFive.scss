@@ -58,20 +58,22 @@
   }
  
 }
+  .text{
+    color: #000000;
+  }
   .pink-button{
     background-color: $pink;
     border: none;
+    cursor: pointer;
     
   }
 
   .grey-button{
-      background-color: white;
-      border: none;
-      color: aliceblue;
-      font-weight: 900;
-      text-decoration: solid;
-      place-content: center;
-  }
+    background-color: $grey;
+    border: none;
+    cursor: pointer;
+   
+}
   hr{
     border:solid rgb(179, 175, 175); 
     border-width: 1px 0 0; 
